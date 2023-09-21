@@ -1,0 +1,81 @@
+@import url("reset.css");
+
+* {
+  color: rgb(32, 13, 150);
+}
+
+p {
+  color: rgb(18, 162, 162);
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(230, 123, 15);
+}
+
+.up {
+  color: rgb(222, 17, 17);
+}
+
+#about-history,
+#about-numbers {
+  color: rgb(50, 173, 19);
+}
+
+[class*="subitem"] {
+  color: rgb(184, 52, 149);
+}
+
+.content-list .content-item {
+  color: rgb(71, 9, 9);
+}
+
+h1.title {
+  color: rgb(132, 60, 199);
+}
+
+.history-subtitle.title {
+  color: rgb(50, 114, 7);
+}
+
+.history-text,
+.history-list .history-item {
+  color: rgb(243, 110, 110);
+}
+
+.numbers p {
+  color: rgb(188, 117, 11);
+}
+
+.mathematicians > h2 {
+  color: rgb(236, 227, 95);
+}
+
+p span {
+  color: rgb(236, 76, 180);
+}
+
+.numbers-list * {
+  color: rgb(91, 236, 236);
+}
+
+.mathematicians-item a p {
+  color: rgb(15, 15, 15);
+}
+
+.interesting-item.color + li {
+  color: rgb(0, 255, 89);
+}
+
+.interesting-item ~ li {
+  color: rgb(80, 37, 3);
+}
+
+.footer-text ~ .footer-list * {
+  color: rgb(0, 213, 255);
+}
+
+.footer-block #sources {
+  color: rgb(172, 10, 159);
+}
