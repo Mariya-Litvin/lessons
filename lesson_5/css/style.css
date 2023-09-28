@@ -1,0 +1,138 @@
+/* Підключення шрифтів */
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px; /* за замовчуванням 16px, не пишемо */
+  color: #7d7d7d; /* За замовченням #000000 */
+}
+
+.title-business {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #37393f;
+  line-height: 1.27;
+  text-transform: capitalize;
+}
+
+.title-project {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.27;
+  text-transform: capitalize;
+}
+
+.sub-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6b77e5;
+  line-height: 1.27;
+}
+
+.text {
+  line-height: 1.46;
+}
+
+.list {
+  font-weight: 500;
+  line-height: 1.46;
+}
+
+#main-title {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.3;
+  word-spacing: 5px;
+  color: rgb(190, 9, 181);
+  text-shadow: 5px 5px 5px rgb(102, 102, 220);
+}
+
+.content-list {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(143, 102, 12, 0.505);
+}
+
+.content-sublist {
+  font-weight: 500;
+  color: rgb(14, 197, 136);
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+.about-dog {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.about-dog .title-dog {
+  color: rgb(68, 53, 201);
+  font-size: 50px;
+  text-shadow: 5px 5px 5px rgba(17, 255, 0, 0.912);
+}
+
+.about-dog .about-text {
+  color: rgba(113, 7, 114, 0.671);
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.4;
+  text-indent: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(92, 103, 210, 0.568);
+}
+
+.importantly-list,
+.facts-list {
+  font-family: "Play", sans-serif;
+  color: rgb(192, 65, 19);
+  text-shadow: 5px 5px 5px rgba(216, 192, 192, 0.738),
+    5px 5px 5px rgba(191, 217, 212, 0.738);
+}
+
+.facts-list span {
+  color: rgba(42, 127, 5, 0.526);
+}
+
+.temperament-text {
+  font-family: "Arsenal", sans-serif;
+  text-decoration: underline;
+  word-spacing: 20px;
+  line-height: 1.35;
+  font-size: 20px;
+  color: rgba(104, 50, 50, 0.507);
+}
+
+.origin-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: rgb(6, 117, 117);
+  text-shadow: -10px -5px 10px rgb(181, 200, 14);
+  line-height: 1.3;
+  letter-spacing: 5px;
+}
+
+.origin-text span {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1241d0;
+}

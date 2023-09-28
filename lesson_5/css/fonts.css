@@ -1,0 +1,58 @@
+/* ------------------Підключення шрифтів----------------- */
+
+/* Google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto+Slab:wght@500;600&display=swap");
+
+/* Google fonts extension */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
+
+/* Підключення вручну */
+
+@font-face {
+  font-family: "Play";
+  src: url(../fonts/Play-Regular.woff2) format("woff2"),
+    url(../fonts/Play-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Play";
+  src: url(../fonts/Play-Bold.woff2) format("woff2"),
+    url(../fonts/Play-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arsenal";
+  src: url(../fonts/Arsenal-Regular.woff2) format("woff2"),
+    url(../fonts/Arsenal-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arsenal";
+  src: url(../fonts/Arsenal-Bold.woff2) format("woff2"),
+    url(../fonts/Arsenal-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arsenal";
+  src: url(../fonts/Arsenal-BoldItalic.woff2) format("woff2"),
+    url(../fonts/Arsenal-BoldItalic.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
