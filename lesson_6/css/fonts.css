@@ -1,0 +1,29 @@
+/* ------------------Підключення шрифтів----------------- */
+
+/* Google fonts extension */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+/* Підключення вручну */
+
+@font-face {
+  font-family: "GoldenLight";
+  src: url(../fonts/GoldenLight.woff2) format("woff2"),
+    url(../fonts/GoldenLight.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BickhamScriptPro";
+  src: url(../fonts/BickhamScriptPro-Semibold.woff2) format("woff2"),
+    url(../fonts/BickhamScriptPro-Semibold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
