@@ -1,0 +1,292 @@
+/* Підключення шрифтів */
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px; /* за замовчуванням 16px, не пишемо */
+  color: #7d7d7d; /* За замовченням #000000 */
+}
+
+.header,
+#practice,
+.margin {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  padding: 20px 15px 0 15px;
+}
+
+#practice {
+  padding: 0 15px 20px 15px;
+}
+
+.header-main-title {
+  font-family: "GoldenLight", fantasy;
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: rgba(187, 12, 120, 0.49);
+  text-shadow: 5px 5px 5px #6b77e5, 5px 5px 5px #6be59a;
+}
+
+.header-list {
+  font-family: "BickhamScriptPro", fantasy;
+  font-weight: 600;
+  color: rgba(6, 77, 77, 0.5);
+  font-size: 45px;
+  line-height: 1.2;
+}
+
+.header-list li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.header-list li:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Consulting */
+
+.block-consulting {
+  padding: 30px 15px;
+  max-width: 722px;
+  margin: 0 auto;
+}
+
+.block-consulting > img {
+  max-width: 100%;
+  margin-bottom: 37px;
+}
+
+.title-business {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #37393f;
+  line-height: 1.27;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.sub-title-proactively,
+.sub-title-incubate {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.sub-title-proactively {
+  color: #6b77e5;
+  margin-bottom: 12px;
+}
+
+.sub-title-incubate {
+  color: #40ddb6;
+  margin-bottom: 23.5px;
+}
+
+.text {
+  line-height: 1.46;
+}
+
+/* .text p {
+	margin-bottom: 15px;
+} */
+
+.title-business + div {
+  margin-bottom: 42px;
+}
+
+.sub-title-proactively + div {
+  margin-bottom: 39px;
+}
+
+.benefits {
+  font-size: 0;
+}
+
+.benefits-image {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.benefits-image img {
+  max-width: 100%;
+}
+
+.benefits-content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 332px;
+  font-size: 18px;
+  margin-left: 29px;
+}
+
+.benefits-title {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 15px;
+}
+
+.list-title {
+  line-height: normal;
+}
+
+.list-title li:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+/* Jewellery */
+
+.block-jewellery {
+  padding: 0 15px 50px 15px;
+  max-width: 1199px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.content-jewellery {
+  width: 563px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sub-title-jewellery {
+  color: #d06b00;
+  font-size: 28px;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.title-jewellery {
+  font-family: "DM Serif Text", serif;
+  font-size: 59px;
+  color: #0e333d;
+  line-height: 1.46;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.text-jewellery {
+  color: #474747;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.image-jewellery {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 38px;
+}
+
+.image-jewellery img {
+  max-width: 273px;
+  height: 518px;
+  border-radius: 5px;
+}
+
+.image-jewellery img + img {
+  margin-left: 22px;
+}
+
+/* Practice */
+
+.visible,
+.hidden,
+.scroll,
+.auto {
+  font-family: "DM Serif Text", serif;
+  color: #02024f;
+  line-height: normal;
+  max-height: 100px;
+}
+
+#practice div:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.visible span,
+.hidden span,
+.scroll span,
+.auto span {
+  color: #d06b00;
+  font-size: 24px;
+}
+
+.visible {
+  overflow: visible;
+  background-color: rgb(102, 231, 231);
+}
+
+.hidden {
+  overflow: hidden;
+  background-color: rgb(228, 195, 152);
+}
+
+.scroll {
+  overflow: scroll;
+  background-color: rgb(74, 240, 174);
+}
+
+.auto {
+  overflow: auto;
+  background-color: rgb(221, 218, 121);
+}
+
+.flowers img {
+  max-width: 500px;
+  padding: 15px;
+  background-color: #6b77e5;
+}
+
+.margin {
+  padding: 0 15px 15px 15px;
+}
+
+.margin-1,
+.margin-2,
+.margin-3 {
+  padding: 60px 10px;
+  max-width: 150px;
+  height: 150px;
+}
+
+.margin-1 {
+  background-color: #40ddb6;
+}
+
+.margin-2 {
+  margin-top: -60px;
+  margin-left: 50px;
+  background-color: #98b4e8;
+}
+
+.margin-3 {
+  margin-top: -60px;
+  margin-left: 100px;
+  background-color: #e495c0;
+}
+
+/* Footer */
+
+.up {
+  text-align: center;
+}
+
+.up img {
+  width: 60px;
+}
