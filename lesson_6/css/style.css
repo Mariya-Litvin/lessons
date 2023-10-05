@@ -247,8 +247,13 @@ body {
   background-color: rgb(221, 218, 121);
 }
 
-.flowers img {
+.flowers {
+  display: inline-block;
   max-width: 500px;
+}
+
+.flowers img {
+  max-width: 100%;
   padding: 15px;
   background-color: #6b77e5;
 }
