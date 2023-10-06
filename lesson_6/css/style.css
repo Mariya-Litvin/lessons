@@ -117,6 +117,7 @@ body {
 .benefits-image {
   display: inline-block;
   vertical-align: middle;
+  margin-right: 29px;
 }
 
 .benefits-image img {
@@ -128,7 +129,6 @@ body {
   vertical-align: middle;
   width: 332px;
   font-size: 18px;
-  margin-left: 29px;
 }
 
 .benefits-title {
@@ -161,6 +161,7 @@ body {
   max-width: 563px;
   display: inline-block;
   vertical-align: middle;
+  margin-right: 38px;
 }
 
 .sub-title-jewellery {
@@ -190,7 +191,6 @@ body {
   font-size: 0;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 38px;
 }
 
 .image-jewellery img {
@@ -199,9 +199,13 @@ body {
   border-radius: 5px;
 }
 
-.image-jewellery img + img {
-  margin-left: 22px;
+[src="img/girl.png"] {
+  margin-right: 22px;
 }
+
+/* .image-jewellery img + img {
+  margin-left: 22px;
+} */
 
 /* Practice */
 
