@@ -1,0 +1,445 @@
+/* Підключення шрифтів */
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px; /* за замовчуванням 16px, не пишемо */
+  color: #7d7d7d; /* За замовченням #000000 */
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  text-align: center;
+  padding: 20px 15px 0 15px;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  color: rgb(98, 8, 84);
+  font-size: 30px;
+  border-radius: 30% 70% 49% 51% / 41% 38% 62% 59%;
+  background-color: #85e5cd;
+}
+
+.header-main-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: rgba(43, 29, 78, 0.49);
+  text-shadow: 5px 5px 5px #c86dcd, 5px 5px 5px #6be59a;
+}
+
+.header-list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* Project Information */
+
+.project {
+  padding: 0 15px;
+  max-width: 860px;
+  margin: 0 auto 40px;
+}
+
+.title-project {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.27;
+  text-transform: capitalize;
+  margin-bottom: 13px;
+}
+
+div.text:not(:last-child),
+ul.list,
+ol.list {
+  margin-bottom: 35px;
+}
+
+div.text p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.text {
+  line-height: 1.46;
+}
+
+/* додавати падінг потрібно батьківському елементу .list */
+
+.list {
+  font-weight: 500;
+  line-height: 1.46;
+  padding-left: 43px;
+}
+
+.ul-item {
+  list-style: disc;
+}
+
+.ol-item {
+  list-style: decimal-leading-zero;
+}
+
+.ul-item:not(:last-child),
+.ol-item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+/* Licencing */
+
+.licencing {
+  padding: 0 15px;
+  max-width: 1248px;
+  margin: 0 auto 40px;
+}
+
+.desc-licencing {
+  color: #37393f;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 16px;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.desc-licencing span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  margin-right: 6px;
+}
+
+.main-title-licencing {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.21;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.subject-licencing {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 11px;
+}
+
+.text-icons,
+.text-photography,
+.text-fonts {
+  line-height: 1.46;
+}
+
+.text-icons {
+  margin-bottom: 32px;
+}
+
+.text-photography {
+  margin-bottom: 24px;
+}
+
+.subtitle-phosphor,
+.subtitle-pexels,
+.subtitle-unsplash {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-license {
+  color: #40ddb6;
+  font-weight: 400;
+}
+
+.block-icons,
+.block-photography {
+  margin-bottom: 100px;
+}
+
+.subtitle-pexels,
+.subtitle-unsplash {
+  margin-bottom: 8px;
+}
+
+.subtitle-pexels + ul {
+  margin-bottom: 34px;
+}
+
+.list-licencing li {
+  display: inline-block;
+  color: #40ddb6;
+  line-height: 1.46;
+}
+
+.link-fonts {
+  color: #40ddb6;
+  font-weight: 500;
+}
+
+/* Clothing */
+
+.clothing {
+  padding: 0 15px;
+  max-width: 1270px;
+  margin: 0 auto 40px;
+}
+
+.block-title-clothing {
+  margin-bottom: 30px;
+  vertical-align: top;
+  font-size: 0;
+}
+
+.title-clothing {
+  font-family: "Coresansc", sans-serif;
+  color: #3c4242;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.56px;
+  text-transform: capitalize;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.decor-clothing {
+  display: inline-block;
+  width: 6px;
+  height: 28px;
+  border-radius: 10px;
+  background: #8a33fd;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.wrapper-clothing {
+  padding-left: 21px;
+}
+
+.subtitle-clothing {
+  font-family: "Coresansc", sans-serif;
+  color: #807d7e;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.675;
+  letter-spacing: 0.4px;
+  margin-bottom: 25px;
+}
+
+.text-clothing {
+  font-family: "Causten", sans-serif;
+  color: #807d7e;
+  font-size: 20px;
+  line-height: 1.675;
+  letter-spacing: 0.4px;
+  margin-bottom: 25px;
+}
+
+.text-clothing.two {
+  margin-bottom: 20px;
+}
+
+.text-clothing span {
+  font-weight: 700;
+}
+
+.text-clothing p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.link-clothing {
+  font-family: "Coresansc", sans-serif;
+  color: #807d7e;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.675;
+  letter-spacing: 0.4px;
+}
+
+/* Jewels */
+
+.jewels {
+  padding: 0 15px;
+  max-width: 1133px;
+  margin: 0 auto 40px;
+  font-size: 0;
+}
+
+.content-jewels {
+  max-width: 503px;
+  display: inline-block;
+  padding-top: 69px;
+  padding-bottom: 67px;
+  vertical-align: middle;
+  margin-right: 85px;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+}
+
+.subtitle-jewels {
+  color: #d58417;
+  font-size: 20px;
+  margin-bottom: 27px;
+  text-transform: uppercase;
+}
+
+.title-jewels {
+  color: #000;
+  font-size: 64px;
+  margin-bottom: 31px;
+  text-transform: capitalize;
+}
+
+.text-jewels {
+  color: #606060;
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+/* додано  vertical-align: top; для того щоб притиснути блок з картинками до верхнього краю блоку. Додано font-size: 0; щоб позбутись фантомного відступу*/
+
+.image-jewels {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.image-jewels-flower {
+  margin-right: 30px;
+  width: 177px;
+  height: 336px;
+}
+
+.image-jewels-jewels {
+  width: 307px;
+  height: 500px;
+}
+
+/* додано vertical-align: middle; для того щоб картини були по середині блоку */
+
+.image-jewels-jewels,
+.image-jewels-flower {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 235px;
+  border: 1px solid #502203;
+}
+
+/* додано border-radius для картинок */
+/* зміщуємо картинку відносно обгортки вліво (від'ємним марджмином) та вниз (за допомогою падінгу)*/
+
+.image-jewels-flower img {
+  border-radius: 235px;
+  /* margin-top: 14px;
+  margin-right: 10px;
+  margin-left: -10px;
+  margin-bottom: -14px; */
+  margin-left: -10px;
+  padding-top: 14px;
+}
+
+.image-jewels-jewels img {
+  border-radius: 235px;
+  /* margin-top: 19px;
+  margin-right: 11px;
+  margin-left: -10px;
+  margin-bottom: -13px; */
+  margin-left: -11px;
+  padding-top: 19px;
+}
+
+/* Practice */
+
+.practice {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  color: #000;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.block {
+  background-color: #af85d6;
+  border: 10px dotted yellow;
+  margin-bottom: 20px;
+  /* opacity: 0; */
+}
+
+.block a {
+  color: rgb(113, 247, 245);
+  border-bottom: 1px dashed;
+}
+
+.block a:hover {
+  color: rgb(247, 113, 178);
+}
+
+.inline {
+  background-color: #7a956b;
+  outline: 5px solid rgba(255, 0, 0, 0.73);
+  border-radius: 20px;
+}
+
+.image {
+  background-color: #794f45;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 400px;
+  display: inline-block;
+  box-shadow: 10px 40px 50px rgb(15, 18, 18);
+  border-radius: 20px;
+  /* visibility: hidden; */
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.block-text {
+  background-color: #6b9590;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  opacity: 0.7;
+  box-shadow: -5px -5px 10px 5px rgb(222, 176, 89),
+    5px 5px 10px 10px rgb(128, 0, 94);
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  border: 5px solid greenyellow;
+}
+
+.circle2 {
+  width: 250px;
+  height: 250px;
+  background-color: rgba(72, 84, 171, 0.767);
+  border-radius: 93% 7% 78% 22% / 62% 58% 42% 38%;
+  opacity: 0.5;
+}
+
+/* Footer */
+
+.up {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.up img {
+  width: 60px;
+}
