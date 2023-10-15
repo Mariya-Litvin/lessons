@@ -316,21 +316,21 @@ div.text p:not(:last-child) {
   vertical-align: top;
 }
 
-.image-jewels-flower {
+.image-jewels-first {
   margin-right: 30px;
   width: 177px;
   height: 336px;
 }
 
-.image-jewels-jewels {
+.image-jewels-second {
   width: 307px;
   height: 500px;
 }
 
 /* додано vertical-align: middle; для того щоб картини були по середині блоку */
 
-.image-jewels-jewels,
-.image-jewels-flower {
+.image-jewels-first,
+.image-jewels-second {
   display: inline-block;
   vertical-align: middle;
   border-radius: 235px;
@@ -340,22 +340,14 @@ div.text p:not(:last-child) {
 /* додано border-radius для картинок */
 /* зміщуємо картинку відносно обгортки вліво (від'ємним марджмином) та вниз (за допомогою падінгу)*/
 
-.image-jewels-flower img {
+.image-jewels-first img {
   border-radius: 235px;
-  /* margin-top: 14px;
-  margin-right: 10px;
-  margin-left: -10px;
-  margin-bottom: -14px; */
   margin-left: -10px;
   padding-top: 14px;
 }
 
-.image-jewels-jewels img {
+.image-jewels-second img {
   border-radius: 235px;
-  /* margin-top: 19px;
-  margin-right: 11px;
-  margin-left: -10px;
-  margin-bottom: -13px; */
   margin-left: -11px;
   padding-top: 19px;
 }
