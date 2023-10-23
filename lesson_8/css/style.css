@@ -434,9 +434,10 @@ body {
 
 .block-3 {
   max-width: 700px;
-  height: 500px;
-  background: url("../img/chip.png") 90px 120px / auto 80px no-repeat,
-    url("../img/dale.png") 430px 150px / auto 80px no-repeat,
+  width: 100%;
+  min-height: 500px;
+  background: url("../img/chip.png") 20% 30% / auto 80px no-repeat,
+    url("../img/dale.png") 60% 30% / auto 80px no-repeat,
     url("../img/forest.jpg") no-repeat;
 }
 
