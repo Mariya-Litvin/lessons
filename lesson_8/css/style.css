@@ -13,8 +13,13 @@ body {
   background: url("../img/tom.png") right top/auto 160px no-repeat fixed;
 }
 
+header,
+main {
+  margin-bottom: 30px;
+}
+
 .header {
-  margin: 0 auto 30px;
+  margin: 0 auto;
   text-align: center;
   padding: 20px 0;
   font-family: "Causten", sans-serif;
@@ -183,13 +188,13 @@ body {
 }
 
 .list-item-awards-first > div {
-  background: url("../img/icon-charter.svg") no-repeat;
-  padding-left: 58px;
+  background: url("../img/icon-charter.svg") 0 0 / 40px 39px no-repeat;
+  padding-left: 59px;
 }
 
 .list-item-awards-second > div {
-  background: url("../img/icon-cup.svg") no-repeat;
-  padding-left: 58px;
+  background: url("../img/icon-cup.svg") 0 0 / 40px 39px no-repeat;
+  padding-left: 59px;
 }
 
 .subtitle-list-item {
@@ -281,27 +286,27 @@ body {
 }
 
 .image-bg-content.one {
-  background: url("../img/image-1.jpg") center/cover no-repeat;
+  background: #c4c4c4 url("../img/image-1.jpg") center/cover no-repeat;
 }
 
 .image-bg-content.two {
-  background: url("../img/image-2.jpg") center/cover no-repeat;
+  background: #c4c4c4 url("../img/image-2.jpg") center/cover no-repeat;
 }
 
 .image-bg-content.three {
-  background: url("../img/image-3.jpg") center/cover no-repeat;
+  background: #c4c4c4 url("../img/image-3.jpg") center/cover no-repeat;
 }
 
 .image-bg-content.four {
-  background: url("../img/image-4.jpg") center/cover no-repeat;
+  background: #c4c4c4 url("../img/image-4.jpg") center/cover no-repeat;
 }
 
 .image-bg-content.five {
-  background: url("../img/image-5.jpg") center/cover no-repeat;
+  background: #c4c4c4 url("../img/image-5.jpg") center/cover no-repeat;
 }
 
 .image-bg-content.six {
-  background: url("../img/image-6.jpg") center/cover no-repeat;
+  background: #c4c4c4 url("../img/image-6.jpg") center/cover no-repeat;
 }
 
 .image-content-subtitle {
@@ -341,7 +346,7 @@ body {
   min-height: 640px;
   padding: 183px 74px 175px 74px;
   border-radius: 10px 0 0 10px;
-  background: url("../img/leafs.jpg") center/cover no-repeat;
+  background: rgba(0, 0, 0, 0.7) url("../img/leafs.jpg") center/cover no-repeat;
 }
 
 .fashion-image-second {
@@ -351,7 +356,8 @@ body {
   width: 100%;
   min-height: 640px;
   border-radius: 0 10px 10px 0;
-  background: url("../img/people.jpg") center/cover no-repeat;
+  background: rgba(238, 169, 85, 0.7) url("../img/people.jpg") center/cover
+    no-repeat;
 }
 
 .fashion-title {
@@ -394,7 +400,7 @@ body {
 .practice {
   padding: 0 15px;
   max-width: 1200px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   color: #000;
   text-align: center;
   line-height: 1.2;
