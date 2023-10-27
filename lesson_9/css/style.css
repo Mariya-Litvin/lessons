@@ -1,0 +1,240 @@
+/* Підключення шрифтів */
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px; /* за замовчуванням 16px, не пишемо */
+  color: #7d7d7d; /* За замовченням #000000 */
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 15px 0 15px;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  color: rgb(98, 8, 84);
+  font-size: 30px;
+  border-radius: 30% 70% 49% 51% / 41% 38% 62% 59%;
+  background-color: #85e5cd;
+}
+
+.header-main-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: rgba(43, 29, 78, 0.49);
+  text-shadow: 5px 5px 5px #c86dcd, 5px 5px 5px #6be59a;
+}
+
+.header-list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* Consulting */
+
+.block-consulting {
+  padding: 0 15px;
+  max-width: 722px;
+  margin: 0 auto 30px;
+}
+
+.block-consulting h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #37393f;
+  line-height: 1.27;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.sub-title-proactively,
+.sub-title-incubate {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+}
+
+.sub-title-proactively {
+  color: #6b77e5;
+  margin-bottom: 12px;
+}
+
+.sub-title-incubate {
+  color: #40ddb6;
+  margin-bottom: 21px;
+}
+
+.block-consulting .text {
+  line-height: 1.46;
+  margin-bottom: 42px;
+}
+
+.block-consulting *:last-child {
+  margin-bottom: 0;
+}
+
+.block-consulting .text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.sub-title-proactively + div {
+  margin-bottom: 40px;
+}
+
+.benefits {
+  font-size: 0;
+  margin-bottom: 50px;
+}
+
+.benefits-image {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 29px;
+}
+
+.benefits-image img {
+  max-width: 100%;
+}
+
+.benefits-content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 332px;
+  font-size: 18px;
+}
+
+.benefits-title {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 15px;
+}
+
+.benefits .list li {
+  line-height: normal;
+  min-height: 27px;
+}
+
+.benefits .list li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.benefits .list li::before {
+  display: inline-block;
+  content: "";
+  background: url("../img/circle.svg") no-repeat;
+  vertical-align: -7px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Business */
+
+.block-business {
+  padding: 0 15px;
+  max-width: 705px;
+  margin: 0 auto 30px;
+}
+
+.block-business h5 {
+  color: #37393f;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+.block-business h5::before {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  vertical-align: 1px;
+  margin-right: 6px;
+}
+
+.block-business h2 {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  max-width: 414px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.block-business .text p {
+  line-height: 1.46;
+  font-size: 18px;
+}
+
+.block-business .text p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.block-business .text {
+  margin-bottom: 48px;
+}
+
+.block-business ul li {
+  padding: 28px 41px 28px 38px;
+  border: 1px solid #e3e3e3;
+  /* font-size: 0; */
+}
+
+/* .block-business ul li > div {
+  display: inline-block;
+} */
+
+.block-business ul li > div::before {
+  display: inline-block;
+  content: "";
+  width: 27px;
+  height: 27px;
+  background: url("../img/circle.svg") 0 0 no-repeat;
+  border-radius: 50%;
+  margin-right: 19px;
+  vertical-align: top;
+}
+
+.block-business ul li:not(:last-child) {
+  margin-bottom: 31px;
+}
+
+.block-business ul li h4 {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+/* Footer */
+
+.up {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.up img {
+  width: 60px;
+}
