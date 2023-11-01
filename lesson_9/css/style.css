@@ -103,6 +103,10 @@ main {
   margin-bottom: 42px;
 }
 
+.block-consulting .text:last-child {
+  margin-bottom: 0px;
+}
+
 .block-consulting .text p:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -405,7 +409,7 @@ main {
 
 .block-jewels .title {
   padding-top: 150px;
-  padding-bottom: 373px;
+  /* padding-bottom: 373px; */
   max-width: 481px;
   display: inline-block;
 }
