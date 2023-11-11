@@ -404,7 +404,7 @@ body {
 
 .team__body {
   position: absolute;
-  top: 396px;
+  bottom: 22px;
   left: 22px;
   background-color: #fff;
   text-transform: capitalize;
