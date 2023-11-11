@@ -1,0 +1,438 @@
+/* Підключення шрифтів */
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px; /* за замовчуванням 16px, не пишемо */
+  color: #7d7d7d;
+  background: linear-gradient(
+      90deg,
+      rgba(174, 238, 234, 1) 0%,
+      rgba(226, 175, 228, 1) 100%
+    )
+    center / contain fixed;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: rgb(215, 119, 212);
+  padding: 15px;
+}
+
+.header--fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.header__logo {
+  display: inline-block;
+  margin-right: 195px;
+}
+
+.logo__link {
+  font-size: 0;
+  display: inline-block;
+  padding: 13.5px 0;
+}
+
+.logo__icon {
+  margin-right: 4px;
+}
+
+.logo__text {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo__letter--color {
+  color: #6b77e5;
+}
+
+.menu {
+  display: inline-block;
+  font-size: 0;
+}
+
+.menu__item {
+  display: inline-block;
+  position: relative;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu__link {
+  display: inline-block;
+  position: relative;
+  padding: 21.5px 0;
+  color: #37393f;
+  line-height: 1.2;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.menu__link--after {
+  padding-right: 10px;
+}
+
+.menu__link--after::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 100%;
+  background: url("../img/arrow-down.svg") 0 0 / cover no-repeat;
+  width: 8px;
+  height: 5px;
+}
+
+.menu__item:hover .menu__link {
+  color: #1c5ad7;
+}
+
+.menu__item:hover .categories {
+  visibility: visible;
+}
+
+.categories {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  /* padding-top: 5px; */
+  visibility: hidden;
+}
+
+.categories__item {
+  position: relative;
+  background-color: rgb(90, 158, 213);
+}
+
+.categories__item:first-child {
+  border-radius: 0 5px 0 0;
+}
+
+.categories__item:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.categories__item:hover .sub-categories {
+  visibility: visible;
+}
+
+.categories__item:hover .categories__link {
+  color: rgb(139, 54, 219);
+}
+
+.categories__link {
+  display: inline-block;
+  position: relative;
+  padding: 5px 15px;
+  color: #37393f;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+.categories__link--after::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 38%;
+  left: 100%;
+  background: url("../img/arrow-right.svg") 0 0 / cover no-repeat;
+  width: 8px;
+  height: 8px;
+}
+
+.categories__link:hover {
+  text-decoration: underline;
+}
+
+.sub-categories {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 150px;
+  padding-left: 5px;
+  visibility: hidden;
+}
+
+.sub-categories__item {
+  background-color: rgb(61, 175, 185);
+}
+
+.sub-categories__item:first-child {
+  border-radius: 0 5px 0 0;
+}
+
+.sub-categories__item:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.sub-categories__link {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #37393f;
+}
+
+.sub-categories__link:hover {
+  text-decoration: underline;
+}
+
+/* Practice */
+
+.main {
+  padding-top: 110px;
+  padding-bottom: 70px;
+}
+
+.main__container > :not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.practice-sticky {
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.2;
+}
+
+.practice-sticky__title {
+  position: sticky;
+  top: 100px;
+  left: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.practice-sticky__title--first {
+  background-color: rgb(138, 35, 78);
+}
+
+.practice-sticky__title--second {
+  background-color: rgb(38, 35, 138);
+}
+
+.practice-sticky__title--third {
+  background-color: rgb(138, 64, 35);
+}
+
+.practice-sticky__text {
+  padding: 10px;
+}
+
+.practice-sticky__text p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.practice-content {
+  font-size: 0;
+  background-color: #d3c6c6;
+  padding: 15px;
+}
+
+.practice-content--margin:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.image {
+  display: inline-block;
+  max-width: 400px;
+  width: 100%;
+  font-size: 16px;
+  vertical-align: top;
+  position: sticky;
+  top: 120px;
+  left: 0;
+}
+
+.image--margin {
+  margin-right: 30px;
+}
+
+.content--margin {
+  margin-right: 30px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.content {
+  display: inline-block;
+  max-width: 760px;
+  font-size: 18px;
+  line-height: 1.2;
+  vertical-align: top;
+}
+
+.content p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Team */
+
+.team {
+  background-color: #fff;
+}
+
+.main-title {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 35px;
+  line-height: 1.35;
+}
+
+.team > :not(:last-child) {
+  margin-bottom: 31px;
+}
+
+.team__list {
+  font-size: 0;
+}
+
+.team__item {
+  position: relative;
+  display: inline-block;
+  background-color: #f4f4f4;
+  font-size: 18px;
+  line-height: 1.25;
+  max-width: 386px;
+  height: 532px;
+  width: 100%;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 31px;
+}
+
+.team__image {
+  max-width: 386px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.team__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.team__item::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(107, 119, 229, 0.7);
+  opacity: 0;
+}
+
+.team__item:hover::before {
+  opacity: 1;
+}
+
+.team__item:hover .team__social {
+  visibility: visible;
+}
+
+.social {
+  font-size: 0;
+}
+
+.team__social {
+  position: absolute;
+  top: 241px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+}
+
+.social__item {
+  display: inline-block;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 13px;
+}
+
+.social__link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.social__link:hover {
+  opacity: 1;
+}
+
+.social__link img {
+  width: 100%;
+  height: 100%;
+}
+
+.team__body {
+  position: absolute;
+  top: 396px;
+  left: 22px;
+  background-color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 24px 46px;
+  width: 88.3%;
+}
+
+.team__title {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.52;
+  margin-bottom: 4px;
+}
+
+.team__text {
+  line-height: 1.35;
+}
+
+.footer {
+  background-color: rgba(30, 118, 180, 0.84);
+  padding: 15px;
+}
+
+.footer__text {
+  color: #d3c6c6;
+  font-size: 30px;
+  text-align: center;
+}
