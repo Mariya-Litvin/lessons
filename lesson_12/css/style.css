@@ -118,12 +118,15 @@ body {
 }
 
 .categories {
-  position: absolute;
-  top: 100%;
-  left: 0;
   width: 150px;
   /* padding-top: 5px; */
   visibility: hidden;
+}
+
+.categories--position {
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 .categories__item {
@@ -172,12 +175,15 @@ body {
 }
 
 .sub-categories {
-  position: absolute;
-  top: 0;
-  left: 100%;
   width: 150px;
   padding-left: 5px;
   visibility: hidden;
+}
+
+.sub-categories--position {
+  position: absolute;
+  top: 0;
+  left: 100%;
 }
 
 .sub-categories__item {
@@ -353,11 +359,11 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(107, 119, 229, 0.7);
-  opacity: 0;
+  visibility: hidden;
 }
 
 .team__item:hover::before {
-  opacity: 1;
+  visibility: visible;
 }
 
 .team__item:hover .team__social {
@@ -370,7 +376,7 @@ body {
 
 .team__social {
   position: absolute;
-  top: 241px;
+  top: 45%;
   left: 0;
   width: 100%;
   padding: 0 20px;
