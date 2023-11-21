@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Homework 13</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header header--fix">
+            <div class="header__container">
+                <div class="header__box">
+                    <div class="header__logo logo">
+                        <a href="#" class="logo__link">Homework 13</a>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#transform-2d">2D Трансформації</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#transform-3d">3D Трансформації</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#car">Car</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="practice">
+                    <h1 class="main-title" id="transform-2d">CSS Трансформації</h1>
+                    <h2 class="sub-title">2D Трансформації</h2>
+                    <div class="practice__transform-2d cards-2d">
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--translate">
+                                translate(20px, 20px)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--translate-percent">
+                                translate(10%, -20%)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--scale-min">
+                                scale(0.2)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--scale-max">
+                                scale(1.3)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--scale-mirror">
+                                scale(-1, 1)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice__transform-2d cards-2d">
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--rotate-positive">
+                                rotate(90deg)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--rotate-negative">
+                                rotate(-45deg)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--rotate-negative-max">
+                                rotate(-360deg)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--skew-positive">
+                                skew(10deg, 20deg)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--skew-negative">
+                                skew(-20deg, 0deg)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice__transform-2d cards-2d">
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--skew-even">
+                                skew(10deg)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--skew-x">
+                                skewX(20deg)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--skew-y">
+                                skewY(30deg)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--multi">
+                                translate(20px, 20px) scale(0.5) rotate(-45deg) skew(-10deg)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item">
+                                <a href="#" class="skew">
+                                    <span>Some text</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice__transform-2d cards-2d">
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--origin-top-left">
+                                origin: top left<br>
+                                rotate(45deg)
+                            </div>
+                        </div>
+                        <div class="cards-2d__block block-2d">
+                            <div class="block-2d__item block-2d__item--origin">
+                                origin: 40px 20px<br>
+                                scale(1.3)
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="transform-3d" class="sub-title">3D Трансформації</h2>
+                    <div class="practice__transform-3d cards-3d">
+                        <div class="cards-3d__block block-3d">
+                            <div class="block-3d__item block-3d__item--translate">
+                                translate3d(20px, 20px, 40px)
+                            </div>
+                        </div>
+                        <div class="cards-3d__block block-3d">
+                            <div class="block-3d__item block-3d__item--scale">
+                                scale3d(1.2, 1.2, 1.2)
+                            </div>
+                        </div>
+                        <div class="cards-3d__block block-3d">
+                            <div class="block-3d__item block-3d__item--rotate">
+                                rotate3d(0, 20, 0, 65deg)
+                            </div>
+                        </div>
+                        <div class="cards-3d__block block-3d">
+                            <div class="block-3d__item block-3d__item--multi">
+                                translate3d(30px, 30px, 30px)
+                                rotate3d(1, 1, 1, 30deg)
+                                scale3d(1.3, 1.3, 1.3)
+                            </div>
+                        </div>
+                        <div class="cards-3d__block block-3d block-3d--style">
+                            <div class="block-3d__item block-3d__item--style">
+                                rotateY(50deg)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="practice__transform-3d cards-3d">
+                        <div class="cards-3d__block block-3d">
+                            <div class="block-3d__item block-3d__item--backface-visibility">
+                                rotateY(180deg)
+                                backface-visibility: hidden
+                            </div>
+                        </div>
+                        <div class="cards-3d__block block-3d block-3d--position">
+                            <div class="block-3d__flip-back">
+                                BACK
+                            </div>
+                            <div class="block-3d__flip-front">
+                                FRONT
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="car" class="car">
+                    <div class="car__body">
+                        <div class="car__carcass"></div>
+                        <div class="car__front"></div>
+                        <div class="car__top"></div>
+                        <div class="car__front-element"></div>
+                        <div class="car__bottom"></div>
+                        <div class="car__mirror-front"></div>
+                        <div class="car__mirror-front-element"></div>
+                        <div class="car__rearview-mirror"></div>
+                        <div class="car__mirror-back"></div>
+                        <div class="car__between-mirrors"></div>
+                        <div class="car__back-element"></div>
+                        <div class="car__gastank"></div>
+                        <div class="car__door-back"></div>
+                        <div class="car__door-front"></div>
+                        <div class="car__handle-back"></div>
+                        <div class="car__handle-front"></div>
+                        <div class="car__exhaust"></div>
+                        <div class="car__wheel-back">
+                            <img src="img/wheel.png" alt="whell">
+                        </div>
+                        <div class="car__wheel-front">
+                            <img src="img/wheel.png" alt="whell">
+                        </div>
+                        <div class="car__headlight-front"></div>
+                        <div class="car__headlight-back"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__text">
+                    <p>The end. See you soon :)</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

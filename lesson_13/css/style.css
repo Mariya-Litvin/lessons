@@ -1,0 +1,665 @@
+/* Підключення шрифтів */
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+
+@import url("reset.css");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.22;
+  color: #371e1e;
+  background: linear-gradient(
+      45deg,
+      rgba(204, 228, 227, 1) 3%,
+      rgba(245, 233, 243, 0.5999649859943977) 70%
+    )
+    center / contain fixed;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background: linear-gradient(
+    45deg,
+    rgba(221, 228, 204, 1) 39%,
+    rgba(101, 206, 240, 1) 70%
+  );
+  padding: 15px;
+}
+
+.header--fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.header__box {
+  font-size: 0;
+}
+
+.header__logo {
+  display: inline-block;
+  margin-right: 270px;
+}
+
+.logo__link {
+  display: inline-block;
+  padding: 12px 0;
+  color: #37393f;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: all 0.3s;
+}
+
+.logo__link:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 5px rgb(165, 224, 87);
+}
+
+.menu {
+  display: inline-block;
+  font-size: 0;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu__link {
+  display: inline-block;
+  padding: 20px 0;
+  color: #37393f;
+  line-height: 1.2;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.menu__item:hover .menu__link {
+  color: #1c5ad7;
+}
+
+/* Practice */
+
+.main {
+  padding-top: 110px;
+  padding-bottom: 50px;
+}
+
+.main__container > :not(:last-child) {
+  margin-bottom: 150px;
+}
+
+.practice {
+  text-align: center;
+}
+
+.practice > :not(:last-child) {
+  margin-bottom: 70px;
+}
+
+.cards-2d,
+.cards-3d {
+  font-size: 0;
+}
+
+.main-title {
+  font-size: 35px;
+  text-shadow: 5px 5px 3px rgb(147, 217, 56);
+}
+
+.sub-title {
+  font-size: 25px;
+}
+
+.block-2d {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 16px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(33, 171, 127, 0.321);
+}
+
+.cards-2d__block:not(:last-child),
+.cards-3d__block:not(:last-child) {
+  margin-right: 60px;
+}
+
+.block-2d__item,
+.block-3d__item {
+  width: 200px;
+  height: 200px;
+  background-color: #37748dc7;
+  padding: 20px 10px;
+  transition: all 0.6s;
+}
+
+.block-2d:hover .block-2d__item--translate {
+  transform: translate(20px, 20px);
+}
+
+.block-2d:hover .block-2d__item--translate-percent {
+  transform: translate(10%, -20%);
+}
+
+.block-2d:hover .block-2d__item--scale-min {
+  transform: scale(0.2);
+}
+
+.block-2d:hover .block-2d__item--scale-max {
+  transform: scale(1.3);
+}
+
+/* Дзеркало */
+
+.block-2d:hover .block-2d__item--scale-mirror {
+  transform: scale(-1, 1);
+}
+
+.block-2d:hover .block-2d__item--rotate-positive {
+  transform: rotate(90deg);
+}
+
+.block-2d:hover .block-2d__item--rotate-negative {
+  transform: rotate(-45deg);
+}
+
+.block-2d:hover .block-2d__item--rotate-negative-max {
+  transform: rotate(-360deg);
+}
+
+.block-2d:hover .block-2d__item--skew-positive {
+  transform: skew(10deg, 20deg);
+}
+
+.block-2d:hover .block-2d__item--skew-negative {
+  transform: skew(-20deg, 0deg);
+}
+
+.block-2d:hover .block-2d__item--skew-even {
+  transform: skew(10deg);
+}
+
+.block-2d:hover .block-2d__item--skew-x {
+  transform: skewX(20deg);
+}
+
+.block-2d:hover .block-2d__item--skew-y {
+  transform: skewY(30deg);
+}
+
+.block-2d:hover .block-2d__item--multi {
+  transform: translate(20px, 20px) scale(0.5) rotate(-45deg) skew(-10deg);
+}
+
+/* Кнопка skew */
+
+.skew {
+  display: inline-block;
+  font-size: 18px;
+  padding: 20px;
+  position: relative;
+}
+
+.skew span {
+  position: relative;
+}
+
+.skew::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #874ebc;
+  transform: skew(-20deg, 0deg);
+  transition: all 0.3s;
+}
+
+.skew:hover::before {
+  transform: skew(20deg, 0deg);
+}
+
+.block-2d:hover .block-2d__item--origin-top-left {
+  transform-origin: top left;
+  transform: rotate(45deg);
+}
+
+.block-2d:hover .block-2d__item--origin {
+  transform-origin: 40px 20px;
+  transform: scale(1.3);
+}
+
+.block-3d {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 16px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(33, 171, 127, 0.321);
+  perspective: 400px;
+  perspective-origin: center;
+}
+
+.block-3d--style {
+  transform-style: preserve-3d;
+}
+
+.block-3d:hover .block-3d__item--translate {
+  transform: translate3d(30px, 30px, 40px);
+}
+
+.block-3d:hover .block-3d__item--scale {
+  transform: scale3d(1.2, 1.2, 1.2);
+}
+
+.block-3d:hover .block-3d__item--rotate {
+  transform: rotate3d(0, 20, 0, 65deg);
+}
+
+.block-3d:hover .block-3d__item--multi {
+  transform: translate3d(30px, 30px, 30px) rotate3d(1, 1, 1, 30deg)
+    scale3d(1.3, 1.3, 1.3);
+}
+
+.block-3d:hover .block-3d__item--style {
+  transform: rotateY(50deg);
+  /* transform: rotateY(360deg); */
+}
+
+.block-3d:hover .block-3d__item--backface-visibility {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+/* Flipper */
+
+.block-3d--position {
+  position: relative;
+}
+
+.block-3d__flip-front,
+.block-3d__flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 20px 10px;
+  transition: all 0.3s;
+}
+
+.block-3d__flip-front {
+  background-color: #77608d;
+  transform: rotateX(0deg);
+  backface-visibility: hidden;
+}
+
+.block-3d__flip-back {
+  background-color: #7a956b;
+  transform: rotateX(-180deg);
+}
+
+.block-3d:hover .block-3d__flip-back {
+  transform: rotateX(0deg);
+}
+
+.block-3d:hover .block-3d__flip-front {
+  transform: rotateX(180deg);
+}
+
+.footer {
+  background: linear-gradient(
+    45deg,
+    rgba(101, 206, 240, 1) 50%,
+    rgba(221, 228, 204, 1) 70%
+  );
+  padding: 15px;
+}
+
+.footer__text {
+  color: #3e4d2f;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Car */
+
+.car {
+  width: 100%;
+  height: 500px;
+  background: url(../img/road.webp) no-repeat;
+}
+
+.car__body {
+  position: relative;
+  width: 700px;
+  height: 300px;
+  top: 170px;
+  left: 125px;
+  /* perspective: 200px; */
+}
+
+.car__carcass {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: 300px;
+  height: 128px;
+  border: 1px solid black;
+  border-right: transparent;
+  border-radius: 194% 238% 47% 157% / 152% 0 59% 206%;
+  background: #232481;
+  z-index: 3;
+}
+
+.car__front {
+  position: absolute;
+  bottom: 8.2px;
+  left: 284px;
+  width: 220px;
+  height: 112px;
+  border: 1px solid black;
+  border-left: 1px solid transparent;
+  background: #232481;
+  border-radius: 0% 100% 41% 135% / 75% 57% 55% 7%;
+  transform: rotate(1deg);
+  z-index: 5;
+}
+
+.car__top {
+  position: absolute;
+  top: 106px;
+  left: 84px;
+  width: 265px;
+  height: 80px;
+  background: #232481;
+  transform: skew(40deg);
+  border: 1px solid black;
+  border-radius: 31% 74% 136% 3% / 69% 32% 16% 215%;
+  z-index: 2;
+}
+
+.car__bottom {
+  position: absolute;
+  bottom: 6px;
+  right: 227px;
+  width: 450px;
+  height: 50px;
+  border-radius: 24% 137% 65% 24% / 0% 152% 12% 88%;
+  background: black;
+  z-index: 5;
+}
+
+.car__front-element {
+  position: absolute;
+  right: 206px;
+  bottom: 20px;
+  width: 30px;
+  height: 10px;
+  background: linear-gradient(
+    45deg,
+    rgba(30, 25, 32, 1) 56%,
+    rgba(119, 118, 222, 1) 73%
+  );
+  border-radius: 7px;
+  box-shadow: 3px 3px 10px rgb(68, 61, 155);
+  transform: rotate(-5deg);
+  z-index: 5;
+}
+
+.car__front-element:hover ~ .car__bottom {
+  box-shadow: 20px 15px 20px 3px rgb(24 142 101);
+}
+
+.car__mirror-front {
+  position: absolute;
+  top: 114px;
+  left: 259px;
+  width: 80px;
+  height: 66px;
+  border: 5px solid black;
+  border-left: transparent;
+  border-top-right-radius: 10px;
+  transform: skew(37deg);
+  background-color: #3e4a4a;
+  z-index: 5;
+}
+
+.car__mirror-front-element {
+  position: absolute;
+  top: 114px;
+  left: 229px;
+  width: 60px;
+  height: 66px;
+  background-color: #3e4a4a;
+  border: 5px solid black;
+  transform: skew(5deg);
+  z-index: 3;
+}
+
+.car__rearview-mirror {
+  position: absolute;
+  top: 164px;
+  left: 323px;
+  width: 35px;
+  height: 20px;
+  background: linear-gradient(
+    45deg,
+    rgba(30, 25, 32, 1) 56%,
+    rgba(119, 118, 222, 1) 73%
+  );
+  border-radius: 8% 92% 21% 79% / 53% 87% 1% 47%;
+  transform: rotate(-15deg);
+  z-index: 6;
+}
+
+.car__mirror-back {
+  position: absolute;
+  top: 114px;
+  left: 87px;
+  width: 123px;
+  height: 66px;
+  border: 5px solid black;
+  border-left: 12px solid black;
+  background-color: #3e4a4a;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  transform: skew(-14deg);
+  z-index: 3;
+}
+
+.car__between-mirrors {
+  position: absolute;
+  top: 114px;
+  left: 196px;
+  width: 40px;
+  border-bottom: 66.5px solid black;
+  border-right: 10px solid transparent;
+  border-left: 8px solid transparent;
+  z-index: 3;
+}
+
+.car__back-element {
+  position: absolute;
+  top: 115px;
+  left: 51px;
+  width: 40px;
+  height: 90px;
+  border-radius: 21% 79% 0% 100% / 100% 82% 18% 0%;
+  border-left: 1px solid black;
+  background: #232481;
+  transform: rotate(18deg);
+  z-index: 2;
+}
+
+.car__gastank {
+  position: absolute;
+  top: 191px;
+  left: 56px;
+  width: 25px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 5px 10px 10px 5px;
+  z-index: 5;
+}
+
+.car__door-back {
+  position: absolute;
+  top: 178px;
+  left: 85px;
+  width: 133px;
+  height: 72px;
+  border: 1px solid black;
+  border-radius: 0px 0px 5px 30px;
+  z-index: 3;
+}
+
+.car__door-front {
+  position: absolute;
+  top: 178px;
+  left: 218px;
+  width: 143px;
+  height: 76px;
+  border: 1px solid black;
+  border-left: 1px solid transparent;
+  border-radius: 0px 0px 5px 5px;
+  z-index: 5;
+}
+
+.car__handle-back {
+  position: absolute;
+  top: 189px;
+  left: 102px;
+  width: 28px;
+  height: 6px;
+  background: linear-gradient(
+    45deg,
+    rgba(30, 25, 32, 1) 56%,
+    rgba(119, 118, 222, 1) 73%
+  );
+  border: 1px solid black;
+  border-radius: 0px 0px 5px 5px;
+  z-index: 6;
+}
+
+.car__handle-front {
+  position: absolute;
+  top: 189px;
+  left: 232px;
+  width: 28px;
+  height: 6px;
+  background: linear-gradient(
+    45deg,
+    rgba(30, 25, 32, 1) 56%,
+    rgba(119, 118, 222, 1) 73%
+  );
+  border: 1px solid black;
+  border-radius: 0px 0px 5px 5px;
+  z-index: 6;
+}
+
+.car__exhaust {
+  position: absolute;
+  top: 250px;
+  left: 19px;
+  width: 10px;
+  height: 15px;
+  background: #11041e;
+  border: 1px solid black;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.car__wheel-back {
+  position: absolute;
+  top: 236px;
+  left: 88px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #262422;
+  z-index: 5;
+}
+
+.car__wheel-front {
+  position: absolute;
+  top: 236px;
+  left: 318px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #262422;
+  z-index: 5;
+}
+
+.car__wheel-front img,
+.car__wheel-back img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  border: 6px solid black;
+  border-radius: 50%;
+}
+
+.car__wheel-front:hover img,
+.car__wheel-back:hover img {
+  transform: rotate(180deg);
+}
+
+.car__headlight-front {
+  position: absolute;
+  right: 193px;
+  bottom: 84px;
+  width: 50px;
+  height: 15px;
+  background-color: rgb(59 223 204);
+  border-radius: 0% 100% 0% 100% / 20% 48% 52% 80%;
+  transition: all 0.3s;
+  z-index: 5;
+}
+
+.car__headlight-front:hover {
+  box-shadow: 20px 3px 10px 5px rgb(185, 165, 68);
+}
+
+.car__headlight-back {
+  position: absolute;
+  left: 21px;
+  top: 185px;
+  width: 20px;
+  height: 25px;
+  background-color: rgba(178, 33, 33, 0.981);
+  border: 2px solid black;
+  border-radius: 13% 100% 21% 42% / 32% 82% 18% 83%;
+  transform: rotate(96deg);
+  transition: all 0.3s;
+  z-index: 5;
+}
+
+.car__headlight-back:hover {
+  box-shadow: 3px 3px 10px orangered;
+  border: 2px solid orangered;
+}
