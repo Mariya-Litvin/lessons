@@ -30,6 +30,24 @@ body {
   padding: 0 15px;
 }
 
+/* БЕМ-блок button */
+
+.button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 14px 28px;
+  border-radius: 8px;
+  background: #8a33fd;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #6620c1;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
 .header {
   padding: 34px 0 31px 0;
   border-bottom: 1px solid #bebcbd;
@@ -38,7 +56,7 @@ body {
 .header__content {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 20px;
+  /* row-gap: 20px; */
   justify-content: space-between;
 }
 
@@ -47,7 +65,7 @@ body {
   justify-content: space-between;
   align-items: center;
   column-gap: 60px;
-  flex-basis: 40%;
+  flex: 1 1 40%;
 }
 
 .header__control {
@@ -56,8 +74,8 @@ body {
   justify-content: flex-end;
   align-items: center;
   column-gap: 60px;
-  row-gap: 20px;
-  flex-basis: 60%;
+  /* row-gap: 20px; */
+  flex: 1 1 60%;
 }
 
 .header__logo {
@@ -100,11 +118,11 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
   color: #333;
   font-weight: 400;
   line-height: 1.2;
-  column-gap: 12px;
+  column-gap: 13px;
 }
 
 .header__languages:hover .languages {
@@ -137,9 +155,9 @@ body {
 
 .header__languages::after {
   content: "";
-  flex: 0 0 24px;
-  width: 24px;
-  min-height: 24px;
+  flex: 0 0 22px;
+  width: 22px;
+  min-height: 22px;
   background: url("../img/arrow-down.svg") center no-repeat;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -155,24 +173,8 @@ body {
 }
 
 .button-header__user {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   flex-shrink: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.2;
   padding: 12px 48px;
-  border-radius: 8px;
-  background: #8a33fd;
-  transition: all 0.3s;
-}
-
-.button-header__user:hover {
-  background: #6620c1;
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .button-header__user--color {
@@ -210,6 +212,7 @@ body {
   margin-bottom: 70px;
   display: flex;
   gap: 20px;
+  text-transform: capitalize;
 }
 
 .categories__title:not(:last-child) {
@@ -339,7 +342,7 @@ body {
 .item-wishlist {
   display: flex;
   justify-content: space-between;
-  gap: 100px;
+  gap: 50px;
   padding-right: 7px;
   padding-bottom: 30px;
   border-bottom: 1px solid #edeef2;
@@ -374,6 +377,7 @@ body {
   border-radius: 4px;
   background-color: rgb(190, 184, 184);
   height: 110px;
+  width: 110px;
   flex: 0 0 110px;
   transition: all 0.3s;
 }
@@ -388,10 +392,14 @@ body {
 }
 
 .item-wishlist__content {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  row-gap: 12px; */
   flex: 1 1 auto;
+}
+
+.item-wishlist__content > :not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .item-wishlist__title,
@@ -436,22 +444,6 @@ body {
   flex-shrink: 0;
 }
 
-.button {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.2;
-  padding: 14px 28px;
-  border-radius: 8px;
-  background: #8a33fd;
-  transition: all 0.3s ease;
-}
-
-.button:hover {
-  background: #6620c1;
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
-}
-
 /* Orders */
 
 .orders {
@@ -460,10 +452,18 @@ body {
   padding: 50px 0;
 }
 
-.orders__list {
+/* .orders__list {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+} */
+
+.orders__list > :not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.orders__card {
+  border-bottom: 1px solid #edeef2;
 }
 
 .info-orders {
@@ -520,8 +520,7 @@ body {
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #edeef2;
+  padding: 30px 0;
 }
 
 .item-orders__product {
