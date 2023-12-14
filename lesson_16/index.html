@@ -53,10 +53,10 @@
         <main class="page">
             <div class="page__container">
 
-                <div class="info">
+                <div class="page__info info">
                     <h1 class="info__title">My Info</h1>
                     <h3 class="info__subtitle">Add Address</h3>
-                    <form class="info__form form-info" enctype="multipart/form-data" method="GET" action="#">
+                    <form class="info__form form-info" enctype="multipart/form-data" method="POST" action="#">
                         <div class="form-info__body">
                             <div class="form-info__item">
                                 <label for="name-info" class="form-info__label">First Name*</label>
@@ -124,11 +124,11 @@
                         </div>
                     </form>
                 </div>
-                <div class="check-out">
+                <div class="page__check-out check-out">
                     <h2 class="check-out__title">Check Out</h2>
                     <div class="billing-details">
                         <h3 class="billing-details__subtitle subtitle-check-out">Billing Details</h3>
-                        <form class="billing-details__form form-billing-details" enctype="multipart/form-data" method="GET" action="#">
+                        <form class="billing-details__form form-billing-details" enctype="multipart/form-data" method="POST" action="#">
                             <div class="form-billing-details__body">
                                 <div class="form-billing-details__item">
                                     <label for="name" class="form-billing-details__label">First Name*</label>
@@ -187,7 +187,7 @@
                             </div>
                         </form>
                     </div>
-                    <form class="form-shipping-payment" enctype="multipart/form-data" method="GET" action="#">
+                    <form class="form-shipping-payment" enctype="multipart/form-data" method="POST" action="#">
                         <div class="form-shipping-payment__item shipping-address">
                             <h3 class="shipping-address__subtitle subtitle-check-out">Shipping Address</h3>
                             <h4 class="shipping-address__desc desc-check-out">Select the address that matches your card or payment method.</h4>
@@ -309,12 +309,12 @@
                     </form>
 
                 </div>
-                <div class="call-back">
+                <div class="page__call-back call-back">
                     <div class="call-back__wrapper-text">
                         <h3 class="call-back__subtitle">Contact Us</h3>
                         <h2 class="call-back__title">Request A Call Back !</h2>
                     </div>
-                    <form class="call-back__form form-call-back" enctype="multipart/form-data" method="GET" action="#">
+                    <form class="call-back__form form-call-back" enctype="multipart/form-data" method="POST" action="#">
                         <div class="form-call-back__body">
                             <div class="form-call-back__item">
                                 <input type="text" name="your-name" id="your-name" class="form-call-back__input" placeholder=" ">
