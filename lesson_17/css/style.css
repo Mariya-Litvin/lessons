@@ -115,6 +115,8 @@ body {
   margin-bottom: 17px;
 }
 
+/* Иногда лучше для товаров указать не cover, а contain, чтобы был виден весь контент на картинке)  */
+
 .list-image__img {
   position: absolute;
   top: 0;
@@ -194,7 +196,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   column-gap: 41px;
-  row-gap: 10px;
+  row-gap: 30px;
   justify-content: center;
 }
 
@@ -370,7 +372,7 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 515.98px) {
+@media (min-width: 767.98px) {
   .our-indicators__body {
     width: 57.54%; /* розмір по макету 702px / 1220px розмір контейнеру без padding */
   }
@@ -724,6 +726,14 @@ body {
     margin-bottom: 35px;
   }
 
+  .list-articles {
+    column-gap: 30px;
+  }
+
+  .list-articles__item {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+
   .products-articles__title {
     font-size: 48px;
   }
@@ -770,7 +780,7 @@ body {
   }
 
   .catalog__link {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .products-articles {
