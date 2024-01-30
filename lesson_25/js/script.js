@@ -23,10 +23,9 @@ function addList(parentElement, elementCount = 5) {
   // А тут уже продолжение кода
 
   let elementList = ``;
-  if (parentElement) {
-    for (let i = 1; i <= elementCount; ++i) {
-      elementList += `<li>Item №${i}</li>`;
-    }
+
+  for (let i = 1; i <= elementCount; ++i) {
+    elementList += `<li>Item №${i}</li>`;
   }
   const list = `<ul>${elementList}</ul>`;
   parentElement.insertAdjacentHTML("afterbegin", list);
@@ -39,15 +38,15 @@ addList(page, 8);
 // const page = document.querySelector(".page");
 
 // function addList(parentElement, elementCount = 5) {
-//   if (parentElement) {
-//     const list = document.createElement("ul");
-//     for (let i = 1; i <= elementCount; ++i) {
-//       const elementList = document.createElement("li");
-//       elementList.textContent = `Item №${i}`;
-//       list.append(elementList);
-//     }
-//     parentElement.prepend(list);
+//   if (!parentElement) return;
+
+//   const list = document.createElement("ul");
+//   for (let i = 1; i <= elementCount; ++i) {
+//     const elementList = document.createElement("li");
+//     elementList.textContent = `Item №${i}`;
+//     list.append(elementList);
 //   }
+//   parentElement.prepend(list);
 // }
 
 // addList(page, 8);
