@@ -12,20 +12,45 @@ const bodyElement = document.body;
 // Написати функцію, яка додає в <body> список UL
 // з певною кількістю LI (кількість має передаватись як параметр функції, також мати значення за замовченням)
 
+//Перший варіант
+
 const page = document.querySelector(".page");
 
 function addList(parentElement, elementCount = 5) {
+  // Проверка на наличие ключевого элемента внутри функции.
+  // Если его нет, то можно спокойно выходить из функции.
+  if (!parentElement) return;
+  // А тут уже продолжение кода
+
   let elementList = ``;
   if (parentElement) {
     for (let i = 1; i <= elementCount; ++i) {
       elementList += `<li>Item №${i}</li>`;
     }
   }
-  let list = `<ul>${elementList}</ul>`;
+  const list = `<ul>${elementList}</ul>`;
   parentElement.insertAdjacentHTML("afterbegin", list);
 }
 
 addList(page, 8);
+
+// Другий варіант
+
+// const page = document.querySelector(".page");
+
+// function addList(parentElement, elementCount = 5) {
+//   if (parentElement) {
+//     const list = document.createElement("ul");
+//     for (let i = 1; i <= elementCount; ++i) {
+//       const elementList = document.createElement("li");
+//       elementList.textContent = `Item №${i}`;
+//       list.append(elementList);
+//     }
+//     parentElement.prepend(list);
+//   }
+// }
+
+// addList(page, 8);
 
 //-----------------------------------------------------------
 
