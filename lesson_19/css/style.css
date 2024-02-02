@@ -260,7 +260,7 @@ footer {
 
 .new-arrival__container {
   max-width: 1268px;
-  position: relative;
+  /* position: relative; */
 }
 
 .title {
@@ -287,12 +287,15 @@ footer {
   flex: 0 0 6px;
 }
 
+.new-arrival__wrapper {
+  position: relative;
+}
+
 .new-arrival__items {
   margin: 0 auto;
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  position: relative;
 }
 
 .new-arrival__button-left,
