@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Homework 20</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__content">
+                    <div class="header__box">
+                        <a href="#" class="header__logo">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                        <form class="header__form form-search" method="GET" enctype="multipart/form-data" action="#">
+                            <input class="form-search__input" type="search" name="search" placeholder="Search">
+                            <button class="form-search__button" type="submit">
+                                <img src="img/icon-search.svg" alt="icon-search">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="header__control">
+                        <div class="header__languages">
+                            <select class="header__select" name="languages">
+                                <option value="English (United States)" selected>English (United States)</option>
+                                <option value="Ukrainian">Ukrainian</option>
+                                <option value="Italian">Italian</option>
+                                <option value="German">German</option>
+                                <option value="Polish">Polish</option>
+                            </select>
+                        </div>
+                        <div class="header__btn button-header">
+                            <button class="button-header__search" type="button" aria-label="button search">
+                            </button>
+                            <a href="#" class="button-header__user button">Login</a>
+                            <a href="#" class="button-header__user button-header__user--color button">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page">
+            <div class="page__sign-in sign-in">
+                <div class="sign-in__image">
+                    <img src="img/girl.webp" alt="Girl">
+                </div>
+                <div class="sign-in__content">
+                    <div class="sign-in__container">
+                        <div class="sign-in__body">
+                            <h1 class="sign-in__title">Sign In Page</h1>
+                            <a href="#" class="sign-in__link sign-in__link--google">
+                                Continue With Google
+                            </a>
+                            <a href="#" class="sign-in__link sign-in__link--twitter">
+                                Continue With Twitter
+                            </a>
+                            <div class="sign-in__line">OR</div>
+                            <form class="sign-in__form form-login" action="#" enctype="multipart/form-data" method="POST">
+                                <div class="form-login__item">
+                                    <label class="form-login__label" for="name">User name or email address</label>
+                                    <input class="form-login__input" type="text" name="name" id="name" required>
+                                </div>
+                                <div class="form-login__item form-login__item--password">
+                                    <div class="form-login__box">
+                                        <span class="form-login__icon icon-show"></span>
+                                        <span class="form-login__text-password">
+                                            Show</span>
+                                    </div>
+                                    <label class="form-login__label" for="password">Password</label>
+                                    <input class="form-login__input" type="password" name="password" id="password" minlength="6" required>
+                                </div>
+                                <a href="#" class="form-login__forget-link text">
+                                    Forget your password
+                                </a>
+                                <button type="submit" class="form-login__button button">Sign In</button>
+                                <div class="form-login__signup-link text">Don’t have an account?
+                                    <a href="#">Sign up</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
