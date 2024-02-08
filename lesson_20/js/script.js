@@ -1,6 +1,12 @@
 //--------- Зміна мови сайту на абревіатуру при розширенні екрану менше 480px
 
-window.addEventListener("resize", function (event) {
+// Викликаємо функцію при завантаженні сторінки
+window.addEventListener("load", adjustSelectOptions);
+
+// Викликаємо функцію при кожному зміні розміру вікна
+window.addEventListener("resize", adjustSelectOptions);
+
+function adjustSelectOptions(event) {
   const viewportWidth = Math.max(
     document.documentElement.clientWidth,
     window.innerWidth || 0
@@ -21,7 +27,7 @@ window.addEventListener("resize", function (event) {
       element.text = element.getAttribute("value") || "";
     });
   }
-});
+}
 
 function getAbbreviation(language) {
   switch (language) {

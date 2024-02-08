@@ -458,8 +458,9 @@ body {
   }
   // .form-login__text-password
   &__text-password {
-    color: $textLightColor;
+    color: $textColor;
     line-height: 1.22;
+    // text-shadow: 1px 0px 0px;
   }
   // .form-login__icon
   &__icon {

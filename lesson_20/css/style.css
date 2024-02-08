@@ -651,7 +651,7 @@ body {
   cursor: pointer;
 }
 .form-login__text-password {
-  color: rgb(128, 125, 126);
+  color: rgb(60, 66, 66);
   line-height: 1.22;
 }
 .form-login__icon {
