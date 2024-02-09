@@ -1,6 +1,6 @@
 // Підключення шрифтів
 
-@import "_fonts";
+@import "_fonts.scss";
 
 // Обнулення
 
@@ -52,18 +52,21 @@ body {
 }
 
 .header {
-  padding: 34px 0 30px 0;
   border-bottom: 1px solid rgb(190, 188, 189);
-  @media (max-width: 700px) {
-    padding: 15px 0 15px 0;
-  }
 
-  // .header__content
-  &__content {
+  // .header__container
+  &__container {
     display: flex;
-    // flex-wrap: wrap;
-    column-gap: 20px;
+    align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 111px;
+    column-gap: 20px;
+
+    @media (max-width: 700px) {
+      min-height: 70px;
+    }
     @media (max-width: 491.98px) {
       column-gap: 10px;
     }
