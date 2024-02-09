@@ -11,6 +11,16 @@
 //   myHeader.style.backgroundColor = color;
 // }
 
+// const selectColor = document.getElementById("color");
+// const myHeader = document.getElementById("header");
+
+// selectColor.addEventListener("input", handleMyColor);
+
+// function handleMyColor(e) {
+//   const color = e.target.value;
+//   myHeader.style.backgroundColor = color;
+// }
+
 const selectColor = document.getElementById("color");
 const myHeader = document.getElementById("header");
 
@@ -18,5 +28,12 @@ selectColor.addEventListener("input", handleMyColor);
 
 function handleMyColor(e) {
   const color = e.target.value;
-  myHeader.style.backgroundColor = color;
+  localStorage.setItem("colorHead", JSON.stringify(color));
+}
+
+try {
+  const data = JSON.parse(localStorage.getItem("colorHead"));
+  myHeader.style.backgroundColor = data;
+} catch (error) {
+  console.log(error.message);
 }
