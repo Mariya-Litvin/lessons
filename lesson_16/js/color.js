@@ -28,12 +28,14 @@ selectColor.addEventListener("input", handleMyColor);
 
 function handleMyColor(e) {
   const color = e.target.value;
+  myHeader.style.backgroundColor = color;
   localStorage.setItem("colorHead", JSON.stringify(color));
 }
 
 try {
   const data = JSON.parse(localStorage.getItem("colorHead"));
   myHeader.style.backgroundColor = data;
+  selectColor.value = data;
 } catch (error) {
   console.log(error.message);
 }
