@@ -44,6 +44,7 @@
         </header>
 
         <main class="page">
+
             <section class="page__hero hero">
                 <div class="hero__background">
                     <img src="img/hero/hero.webp" alt="girl">
@@ -56,17 +57,91 @@
                         <h4 class="hero__label">cool / colorful / comfy</h4>
                         <a href="#" class="hero__link">Shop Now</a>
                     </div>
-                    <button type="button" class="hero__button-left" aria-label="button arrow left">
-                        <img src="img/hero/arrow-left.svg" alt="arrow left">
-                    </button>
-                    <button type="button" class="hero__button-right" aria-label="button arrow right">
-                        <img src="img/hero/arrow-right.svg" alt="arrow right">
-                    </button>
-                    <div class="hero__carousel carousel-indicators">
-                        <span class="carousel-indicators__button carousel-indicators__button--left"></span>
-                        <span class="carousel-indicators__button carousel-indicators__button--right"></span>
+                </div>
+                <button type="button" class="hero__button-left" aria-label="button arrow left">
+                    <img src="img/hero/arrow-left.svg" alt="arrow left">
+                </button>
+                <button type="button" class="hero__button-right" aria-label="button arrow right">
+                    <img src="img/hero/arrow-right.svg" alt="arrow right">
+                </button>
+                <div class="hero__carousel carousel-indicators">
+                    <span class="carousel-indicators__button carousel-indicators__button--left"></span>
+                    <span class="carousel-indicators__button carousel-indicators__button--right"></span>
+                </div>
+            </section>
+            <div class="page__cards cards">
+                <div class="cards__container">
+                    <div class="cards__items">
+                        <article class="cards__item item-card">
+                            <div class="item-card__image">
+                                <img src="img/cards/card-1.webp" alt="foto girl">
+                            </div>
+                            <div class="item-card__body">
+                                <h4 class="item-card__desc">Low Price</h4>
+                                <h2 class="item-card__title">High Coziness</h2>
+                                <div class="item-card__text">
+                                    <p>UPTO 50% OFF</p>
+                                </div>
+                                <a href="#" class="item-card__link">Explore Items</a>
+                            </div>
+                        </article>
+                        <article class="cards__item item-card">
+                            <div class="item-card__image item-card__image--background">
+                                <img src="img/cards/card-2.webp" alt="foto girl">
+                            </div>
+                            <div class="item-card__body">
+                                <h4 class="item-card__desc">Beyoung Presents</h4>
+                                <h2 class="item-card__title">Breezy Summer Style</h2>
+                                <div class="item-card__text item-card__text--margin">
+                                    <p>UPTO 50% OFF</p>
+                                </div>
+                                <a href="#" class="item-card__link">Explore Items</a>
+                            </div>
+                        </article>
                     </div>
-
+                </div>
+            </div>
+            <section class="page__new-arrival new-arrival">
+                <div class="new-arrival__container">
+                    <h2 class="new-arrival__title title title--margin">New Arrival</h2>
+                    <div class="new-arrival__wrapper">
+                        <button type="button" class="new-arrival__button-left" aria-label="button arrow left"></button>
+                        <button type="button" class="new-arrival__button-right" aria-label="button arrow right"></button>
+                        <div class="new-arrival__items">
+                            <article class="new-arrival__item">
+                                <a href="#" class="new-arrival__link">
+                                    <div class="new-arrival__image">
+                                        <img src="img/new-arrival/trousers.webp" alt="trousers">
+                                    </div>
+                                    <h4 class="new-arrival__subtitle-item">Knitted Joggers</h4>
+                                </a>
+                            </article>
+                            <article class="new-arrival__item">
+                                <a href="#" class="new-arrival__link">
+                                    <div class="new-arrival__image">
+                                        <img src="img/new-arrival/man-in-a-red-sleeve.webp" alt="man in a red sleeve">
+                                    </div>
+                                    <h4 class="new-arrival__subtitle-item">Full Sleeve</h4>
+                                </a>
+                            </article>
+                            <article class="new-arrival__item">
+                                <a href="#" class="new-arrival__link">
+                                    <div class="new-arrival__image">
+                                        <img src="img/new-arrival/man-in-a-black-t-shirt.webp" alt="man in a black t-shirt">
+                                    </div>
+                                    <h4 class="new-arrival__subtitle-item">Active T-Shirts</h4>
+                                </a>
+                            </article>
+                            <article class="new-arrival__item">
+                                <a href="#" class="new-arrival__link">
+                                    <div class="new-arrival__image">
+                                        <img src="img/new-arrival/woman-in-a-white-t-shirt.webp" alt="woman in a white t-shirt">
+                                    </div>
+                                    <h4 class="new-arrival__subtitle-item">Urban Shirts</h4>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="page__fashion fashion">
@@ -96,7 +171,7 @@
             </section>
             <section class="page__men men">
                 <div class="men__container">
-                    <h2 class="men__title title">Categories For Men</h2>
+                    <h2 class="men__title title title--margin">Categories For Men</h2>
                     <div class="men__cards cards-men">
                         <article class="cards-men__item">
                             <a href="#" class="cards-men__link">
@@ -229,27 +304,100 @@
                     </div>
                 </div>
             </section>
+            <section class="page__women women">
+                <div class="women__container">
+                    <h2 class="women__title title title--margin">Categories For Women</h2>
+                    <div class="women__cards cards-women">
+                        <article class="cards-women__item">
+                            <a href="#" class="cards-women__link">
+                                <div class="cards-women__image">
+                                    <img src="img/women/woman-1.webp" alt="woman in an orange hoodie">
+                                </div>
+                                <div class="cards-women__body">
+                                    <div class="cards-women__content">
+                                        <h3 class="cards-women__title">Hoodies & Sweetshirt</h3>
+                                        <div class="cards-women__text">
+                                            Explore Now!
+                                        </div>
+                                    </div>
+                                    <div class="cards-women__arrow"></div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="cards-women__item">
+                            <a href="#" class="cards-women__link">
+                                <div class="cards-women__image">
+                                    <img src="img/women/woman-2.webp" alt="woman whith phone">
+                                </div>
+                                <div class="cards-women__body">
+                                    <div class="cards-women__content">
+                                        <h3 class="cards-women__title">Coats & Parkas</h3>
+                                        <div class="cards-women__text">
+                                            Explore Now!
+                                        </div>
+                                    </div>
+                                    <div class="cards-women__arrow"></div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="cards-women__item">
+                            <a href="#" class="cards-women__link">
+                                <div class="cards-women__image">
+                                    <img src="img/women/woman-3.webp" alt="woman in a blue t-shirt">
+                                </div>
+                                <div class="cards-women__body">
+                                    <div class="cards-women__content">
+                                        <h3 class="cards-women__title">Tees & T-Shirt</h3>
+                                        <div class="cards-women__text">
+                                            Explore Now!
+                                        </div>
+                                    </div>
+                                    <div class="cards-women__arrow"></div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="cards-women__item">
+                            <a href="#" class="cards-women__link">
+                                <div class="cards-women__image">
+                                    <img src="img/women/woman-4.webp" alt="woman in a white t-shirt">
+                                </div>
+                                <div class="cards-women__body">
+                                    <div class="cards-women__content">
+                                        <h3 class="cards-women__title">Boxers</h3>
+                                        <div class="cards-women__text">
+                                            Explore Now!
+                                        </div>
+                                    </div>
+                                    <div class="cards-women__arrow"></div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
             <section class="page__brands brands">
                 <div class="brands__container">
-                    <div class="brands__wrapper-title">
-                        <h2 class="brands__title">Top Brands Deal</h2>
-                        <h4 class="brands__subtitle">Up To <span>60%</span> off on brands</h4>
-                    </div>
-                    <div class="brands__list">
-                        <a href="#" class="brands__item"><img src="img/brands/nike.png" alt="logo nike" aria-label="logo brand nike"></a>
-                        <a href="#" class="brands__item"><img src="img/brands/h-m.png" alt="logo h&m" aria-label="logo brand h&m"></a>
-                        <a href="#" class="brands__item"><img src="img/brands/levis.png" alt="logo levi's" aria-label="logo brand levi's"></a>
-                        <a href="#" class="brands__item"><img src="img/brands/polo.png" alt="logo u.s. polo assn." aria-label="logo brand u.s. polo assn."></a>
-                        <a href="#" class="brands__item"><img src="img/brands/puma.png" alt="logo puma" aria-label="logo brand puma"></a>
+                    <div class="brands__box">
+                        <div class="brands__wrapper-title">
+                            <h2 class="brands__title">Top Brands Deal</h2>
+                            <h4 class="brands__subtitle">Up To <span>60%</span> off on brands</h4>
+                        </div>
+                        <div class="brands__list">
+                            <a href="#" class="brands__item" aria-label="logo brand nike"><img src="img/brands/nike.png" alt="logo nike"></a>
+                            <a href="#" class="brands__item" aria-label="logo brand h&m"><img src="img/brands/h-m.png" alt="logo h&m"></a>
+                            <a href="#" class="brands__item" aria-label="logo brand levi's"><img src="img/brands/levis.png" alt="logo levi's"></a>
+                            <a href="#" class="brands__item" aria-label="logo brand u.s. polo assn."><img src="img/brands/polo.png" alt="logo u.s. polo assn."></a>
+                            <a href="#" class="brands__item" aria-label="logo brand puma"><img src="img/brands/puma.png" alt="logo puma"></a>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="page__limelight limelight">
                 <div class="limelight__container">
-                    <h2 class="limelight__title title">In The Limelight</h2>
+                    <h2 class="limelight__title title title--margin">In The Limelight</h2>
                     <div class="limelight__cards cards-limelight">
                         <article class="cards-limelight__item">
-                            <a href="#" class="cards-limelight__image">
+                            <a href="#" class="cards-limelight__image" aria-label="foto girl">
                                 <img src="img/limelight/girl-1.webp" alt="girl in a sweater">
                             </a>
                             <button class="cards-limelight__button" type="button" aria-label="button add to favorite"></button>
@@ -264,7 +412,7 @@
                             </div>
                         </article>
                         <article class="cards-limelight__item">
-                            <a href="#" class="cards-limelight__image">
+                            <a href="#" class="cards-limelight__image" aria-label="foto girl">
                                 <img src="img/limelight/girl-2.webp" alt="girl in a hat">
                             </a>
                             <button class="cards-limelight__button" type="button" aria-label="button add to favorite"></button>
@@ -279,7 +427,7 @@
                             </div>
                         </article>
                         <article class="cards-limelight__item">
-                            <a href="#" class="cards-limelight__image">
+                            <a href="#" class="cards-limelight__image" aria-label="foto girl">
                                 <img src="img/limelight/girl-3.webp" alt="girl with headphones">
                             </a>
                             <button class="cards-limelight__button" type="button" aria-label="button add to favorite"></button>
@@ -294,7 +442,7 @@
                             </div>
                         </article>
                         <article class="cards-limelight__item">
-                            <a href="#" class="cards-limelight__image">
+                            <a href="#" class="cards-limelight__image" aria-label="foto girl">
                                 <img src="img/limelight/girl-4.webp" alt="girl in a purple suit">
                             </a>
                             <button class="cards-limelight__button" type="button" aria-label="button add to favorite"></button>
@@ -313,7 +461,7 @@
             </section>
             <section class="page__feedback feedback">
                 <div class="feedback__container">
-                    <h2 class="feedback__title title">Feedback</h2>
+                    <h2 class="feedback__title title title--margin">Feedback</h2>
                     <div class="feedback__cards">
                         <article class="feedback__item item-feedback">
                             <div class="item-feedback__top">
@@ -394,6 +542,146 @@
         </main>
         <footer class="footer">
             <div class="footer__container">
+                <div class="footer__top-part">
+                    <div class="footer__info info-footer">
+                        <div class="info-footer__item">
+                            <h4 class="info-footer__title">Need Help</h4>
+                            <ul class="info-footer__list list-info">
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">Contact Us</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">Track Order</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">Returns & Refunds</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">FAQ's</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">Career</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-footer__item">
+                            <h4 class="info-footer__title">Company</h4>
+                            <ul class="info-footer__list list-info">
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">About Us</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">euphoria Blog</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">euphoriastan</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">Collaboration</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">Media</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-footer__item">
+                            <h4 class="info-footer__title">More Info</h4>
+                            <ul class="info-footer__list list-info">
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">Term and Conditions</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">Privacy Policy</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">Shipping Policy</a>
+                                </li>
+                                <li class="list-info__item">
+                                    <a href="#" class="list-info__link">Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-footer__item info-footer__item--address">
+                            <h4 class="info-footer__title">Location</h4>
+                            <address class="info-footer__address">
+                                <a href="mailto:support@euphoria.in" class="info-footer__link-address">support@euphoria.in</a>
+                                <a href="https://maps.app.goo.gl/z6oj7PNNoyPDrxz8A" target="_blank" rel="noopener noreferrer" class="info-footer__link-address">
+                                    <p>Eklingpura Chouraha, Ahmedabad Main Road</p>
+                                    <p>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</p>
+                                </a>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="footer__connection">
+                        <div class="footer__social-links links-social">
+                            <ul class="links-social__list">
+                                <li class="links-social__item">
+                                    <a class="links-social__link-item" href="https://www.facebook.com" title="Facebook" target="_blank" rel="noopener noreferrer" aria-label="link facebook">
+                                        <img src="img/icons/icon-facebook.svg" alt="icon facebook">
+                                    </a>
+                                </li>
+                                <li class="links-social__item">
+                                    <a class="links-social__link-item" href="https://www.instagram.com/example" title="Instagram" target="_blank" rel="noopener noreferrer" aria-label="link instagram">
+                                        <img src="img/icons/icon-instagram.svg" alt="icon instagram">
+                                    </a>
+                                </li>
+                                <li class="links-social__item">
+                                    <a class="links-social__link-item" href="https://www.twitter.com" title="Twitter" target="_blank" rel="noopener noreferrer" aria-label="link twitter">
+                                        <img src="img/icons/icon-twitter.svg" alt="icon twitter">
+                                    </a>
+                                </li>
+                                <li class="links-social__item">
+                                    <a class="links-social__link-item" href="https://www.linkedin.com" title="Linkedin" target="_blank" rel="noopener noreferrer" aria-label="link linkedin">
+                                        <img src="img/icons/icon-linkedin.svg" alt="icon linkedin">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__app app-block">
+                            <h4 class="app-block__title">Download The App</h4>
+                            <ul class="app-block__list">
+                                <li class="app-block__item">
+                                    <a href="#" class="app-block__link app-block__link--google-play">
+                                        <div class="app-block__text">
+                                            <p>android app on</p>
+                                            <p>Google Play</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="app-block__item">
+                                    <a href="#" class="app-block__link app-block__link--app-store">
+                                        <div class="app-block__text">
+                                            <p>Available on the</p>
+                                            <p>App Store</p>
+                                        </div>
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__middle-part">
+                    <details class="footer__spoiler spoiler-footer">
+                        <summary class="spoiler-footer__item">Popular Categories</summary>
+                        <ul class="spoiler-footer__list">
+                            <li class="spoiler-footer__item-list">
+                                <a href="#" class="spoiler-footer__link">Categorie #1</a>
+                            </li>
+                            <li class="spoiler-footer__item-list">
+                                <a href="#" class="spoiler-footer__link">Categorie #2</a>
+                            </li>
+                            <li class="spoiler-footer__item-list">
+                                <a href="#" class="spoiler-footer__link">Categorie #3</a>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <div class="footer__bottom-part copyright-text">
+                    <p>
+                        Copyright &copy; 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+                    </p>
+                </div>
 
             </div>
         </footer>

@@ -56,3 +56,13 @@ textarea {
   -moz-appearance: none;
   appearance: none;
 }
+address {
+  font-style: normal;
+}
+details > summary {
+  list-style: none;
+}
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+  display: none;
+}
