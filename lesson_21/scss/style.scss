@@ -353,6 +353,13 @@ body {
     &::placeholder {
       color: $textLightColor;
     }
+    &:focus ~ .form-search__button {
+      background-color: rgb(0 153 225/50%);
+      border-radius: 3px;
+    }
+    &:focus ~ .form-search__button img {
+      transform: scale(1.2);
+    }
   }
   // .form-search__button
   &__button {
@@ -362,8 +369,11 @@ body {
     width: 25px;
     height: 25px;
     transform: translateY(-50%);
+
     img {
       @include img(14px, 14px, cover, null);
+      transform: scale(1.0001);
+      transition: transform 0.3s;
     }
   }
 }
@@ -817,7 +827,7 @@ body {
     background-color: $secondaryColor;
     border-radius: 12px;
     &:not(:last-child) {
-      margin-bottom: 22px;
+      margin-bottom: 12px;
       @media (min-width: 1098px) {
         margin-bottom: 33px;
       }
