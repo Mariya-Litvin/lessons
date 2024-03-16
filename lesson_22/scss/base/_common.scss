@@ -1,0 +1,141 @@
+body {
+  font-family: "Inter", sans-serif;
+  // color: $mainColor;
+  font-size: toRem(18);
+  .menu-open & {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  main {
+    flex-grow: 1;
+  }
+}
+
+[class*="__container"] {
+  // max-width: #{$containerWidth}px;
+  max-width: toRem($containerWidth);
+  margin: 0 auto;
+  padding-left: toRem(15);
+  padding-right: toRem(15);
+}
+
+.button {
+  color: $secondaryColor;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+  @include adaptiveValue("font-size", 18, 16);
+  padding: toRem(10);
+  min-width: toRem(150);
+  min-height: toRem(45);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $secondaryBgColor;
+  transition: all 0.3s;
+  @media (min-width: $tablet) {
+    min-width: toRem(185);
+    min-height: toRem(65);
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $mainBgColor;
+      color: $mainColor;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+  // .button--green
+  &.button--green {
+    color: $mainColor;
+    background-color: $mainBgColor;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $secondaryBgColor;
+        color: $secondaryColor;
+      }
+    }
+  }
+  // .button--green-white-text
+  &.button--green-white-text {
+    color: $secondaryColor;
+    background-color: $mainBgColor;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $secondaryBgColor;
+      }
+    }
+  }
+  // .button--black-white-text
+  &.button--black-white-text {
+    color: $secondaryColor;
+    background-color: $mainColor;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $secondaryBgColor;
+      }
+    }
+  }
+}
+
+.subtitle {
+  color: $secondaryColor;
+  font-weight: 500;
+  line-height: 1.46;
+  display: flex;
+  align-items: flex-start;
+  column-gap: toRem(6);
+  @include adaptiveValue("font-size", 18, 16);
+  // .subtitle--dark
+  &.subtitle--dark {
+    color: $mainColor;
+    line-height: 1.2;
+    &::before {
+      margin-top: toEm(5, 18);
+    }
+  }
+  &.subtitle--before-bg {
+    &::before {
+      background-color: $secondaryBgColor;
+    }
+  }
+  &::before {
+    content: "";
+    width: toEm(12, 18);
+    height: toEm(12, 18);
+    flex: 0 0 toEm(12, 18);
+    margin-top: toEm(7, 18);
+    background-color: $mainBgColor;
+  }
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  color: $mainColor;
+  // font-size: toRem(40);
+  @include adaptiveValue("font-size", 40, 24);
+  font-weight: 700;
+  line-height: 1.21;
+  &.title--white {
+    color: $secondaryColor;
+  }
+}
+
+.input {
+  border: toRem(1) solid #ddd;
+  background-color: #f8f8f8;
+  color: $mainColor;
+  line-height: 1.2;
+  @include adaptiveValue("font-size", 18, 16);
+  padding: 0 toRem(33);
+  &::placeholder {
+    color: $mainColor;
+  }
+}

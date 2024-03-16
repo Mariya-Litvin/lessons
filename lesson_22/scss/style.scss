@@ -1,0 +1,70 @@
+@use "sass:math";
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1220;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Підключення шрифтів
+@import "./base/fonts";
+
+// Обнулення
+@import "./base/reset";
+
+//Функції
+@import "./utils/function";
+
+//Міксини
+@import "./utils/mixin";
+
+// Змінні
+@import "./utils/variables";
+
+// Шаблони
+@import "./utils/extend";
+
+//Компоненти
+@import "./base/common";
+
+// Header
+@import "./components/header";
+
+// Hero
+@import "./components/hero";
+
+// Welcome
+@import "./components/welcome";
+
+// Clients
+@import "./components/clients";
+
+// Services
+@import "./components/services";
+
+// Project
+@import "./components/project";
+
+// Testimonial
+@import "./components/testimonial";
+
+// Work
+@import "./components/work";
+
+// Team
+@import "./components/team";
+
+// News
+@import "./components/news";
+
+// Subscribe
+@import "./components/subscribe";
+
+// Footer
+@import "./components/footer";

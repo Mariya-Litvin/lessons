@@ -1,0 +1,204 @@
+.news {
+  // .news__content
+  &__content {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 40, 20);
+    }
+  }
+  // .news__list
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: toRem(30);
+    }
+  }
+}
+
+.content-news {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: toRem(20);
+  @media (min-width: $mobile) {
+    justify-content: space-between;
+  }
+
+  // .content-news__text
+  &__text {
+    text-align: center;
+    flex-flow: 1;
+    @media (min-width: $mobile) {
+      text-align: left;
+    }
+  }
+  // .content-news__subtitle
+  &__subtitle {
+    justify-content: center;
+    @media (min-width: $mobile) {
+      justify-content: flex-start;
+    }
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 16, 10);
+    }
+  }
+
+  // .content-news__button
+  &__button {
+    flex-shrink: 0;
+    max-width: 30%;
+    .news__container > & {
+      display: flex;
+      margin: 0 auto;
+      max-width: 40%;
+    }
+  }
+}
+
+.list-news {
+  display: grid;
+  @include adaptiveValue("column-gap", 36, 18, 0, $containerWidth, 768);
+  row-gap: toRem(40);
+  @media (min-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  // .list-news__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(19);
+  }
+  // .list-news__content
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: toRem(13);
+  }
+  // .list-news__image
+  &__image {
+    aspect-ratio: 592/363;
+    background-color: $secondaryCardsBgColor;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // .list-news__info
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: toRem(50);
+    @media (min-width: toEm(1100)) {
+      min-height: toRem(65);
+    }
+  }
+  // .list-news__date
+  &__date {
+    padding: toRem(10);
+    background-color: $secondaryBgColor;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+    @media (min-width: $smallMobile) and (max-width: toEm(767.98)) {
+      flex: 1 1 percent(220, 592);
+    }
+    @media (min-width: toEm(900)) {
+      flex: 1 1 percent(220, 592);
+    }
+    time {
+      color: $secondaryColor;
+      text-align: center;
+      font-weight: 600;
+      line-height: 1.2;
+      text-transform: capitalize;
+    }
+  }
+
+  // .list-news__link-title
+  &__link-title {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    color: $mainColor;
+    font-size: toRem(30);
+    @include adaptiveValue("font-size", 30, 24);
+    font-weight: 600;
+    line-height: 1.27;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.3s ease-in-out;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
+  // .list-news__text
+  &__text {
+    flex-grow: 1;
+    color: $textDarkColor;
+    line-height: 1.46;
+    &:not(:last-child) {
+      margin-bottom: toRem(13);
+    }
+    & > *:not(:last-child) {
+      margin-bottom: toRem(15);
+    }
+  }
+  // .list-news__link
+  &__link {
+    align-self: flex-start;
+    color: $secondaryBgColor;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: capitalize;
+    position: relative;
+    &::after {
+      @extend %link-hover1;
+    }
+    @media (any-hover: hover) {
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+
+.tags-elements {
+  background-color: $mainBgColor;
+  display: flex;
+  flex: 1 1 percent(372, 592);
+  // .tags-elements__item
+  &__item {
+    flex: 1 1 auto;
+    color: #208068;
+    line-height: 1.2;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    column-gap: toRem(5);
+    padding: toRem(10);
+    // .tags-elements__item--user
+    &.tags-elements__item--user {
+      border-right: toRem(2) solid #2d9e82;
+      &::before {
+        content: "";
+        width: toRem(14);
+        height: toRem(14);
+        flex: 0 0 toRem(14);
+        background: url(../img/icons/icon-user.svg) center/ cover no-repeat;
+      }
+    }
+    &.tags-elements__item--leyba::before {
+      content: "";
+      width: toRem(13);
+      height: toRem(13);
+      flex: 0 0 toRem(13);
+      background: url(../img/icons/icon-leyba.svg) center/ cover no-repeat;
+    }
+  }
+}

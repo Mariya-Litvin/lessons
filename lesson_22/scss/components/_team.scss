@@ -1,0 +1,53 @@
+.team {
+  position: relative;
+  aspect-ratio: 2/1.5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  @media (min-width: $smallMobile) {
+    align-items: center;
+  }
+  @media (min-width: toEm(650)) {
+    aspect-ratio: 1920/734;
+  }
+  // .team__image
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $secondaryCardsBgColor;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // .team__title
+  &__title {
+    position: relative;
+    z-index: 2;
+    flex-basis: 100%;
+    text-align: center;
+    @media (min-width: $smallMobile) {
+      flex-basis: auto;
+    }
+  }
+  // .team__link-title
+  &__link-title {
+    background: rgba(55, 57, 63, 0.8);
+    backdrop-filter: blur(toRem(9));
+    display: block;
+    @include adaptiveValue("padding-top", 87, 15, 0, 1920, 768);
+    @include adaptiveValue("padding-bottom", 87, 15, 0, 1920, 768);
+    @include adaptiveValue("padding-left", 130, 30, 0, 1920, 768);
+    @include adaptiveValue("padding-right", 130, 30, 0, 1920, 768);
+    transition: color 0.3s ease-in-out;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $mainBgColor;
+      }
+    }
+  }
+}
