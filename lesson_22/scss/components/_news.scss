@@ -25,7 +25,7 @@
   // .content-news__text
   &__text {
     text-align: center;
-    flex-flow: 1;
+    flex-grow: 1;
     @media (min-width: $mobile) {
       text-align: left;
     }
