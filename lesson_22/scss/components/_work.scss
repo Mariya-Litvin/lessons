@@ -204,6 +204,9 @@
       flex-wrap: nowrap;
     }
     & > * {
+      // чтобы на ios input не менял размеры
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
       height: toRem(65);
       width: 100%;
       padding: 0 toRem(24) 0 toRem(33);

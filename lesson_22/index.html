@@ -436,8 +436,8 @@
                                 <input type="email" name="email" required placeholder="Email Address" class="form-book-now__input input">
                                 <input type="tel" name="phone" pattern="^\+?\d+$" required placeholder="Phone Number" title="0961112233" class="form-book-now__input input">
                                 <div class="form-book-now__box">
-                                    <input onfocus="(this.type='date')" onblur="(this.type='text')" type="text" name="date" placeholder="Date" class="input">
-                                    <input onfocus="(this.type='time')" onblur="(this.type='text')" type="text" name="time" placeholder="Time" class="input">
+                                    <input type="text" name="date" placeholder="Date" class="input">
+                                    <input type="text" name="time" placeholder="Time" class="input">
                                 </div>
                                 <textarea name="description" placeholder="Service Description" class="form-book-now__textarea input"></textarea>
                             </div>
@@ -637,7 +637,7 @@
                         </div>
                         <form action="#" class="subscribe-box__form" name="subscribe">
                             <div class="subscribe-box__item">
-                                <input class="subscribe-box__input" type="email" name="email" placeholder="your email address">
+                                <input class="subscribe-box__input" type="email" name="email" placeholder="your email address" required>
                             </div>
                             <button type="submit" class="subscribe-box__button button">Subscribe</button>
                         </form>

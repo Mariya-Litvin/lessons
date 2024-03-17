@@ -153,13 +153,42 @@ const dynamicAdapt = new DynamicAdapt("max");
 // Вызываем метод init() для этого экземпляра
 dynamicAdapt.init();
 
-// Зникнення та поява іконки календаря в input "date"
+// Зміна типу input type="text" на input type="date"
 
-const input = document.querySelector("input[name='date']");
-input.addEventListener("focus", () => {
-  input.style.backgroundImage = "none";
+const inputDate = document.querySelector("input[name='date']");
+
+// только так работает на iphone
+inputDate.addEventListener("focus", () => {
+  // input.style.backgroundImage = "none";
+  inputDate.style.display = "none"; // Скрыть поле ввода текста
+  const dateInput = document.createElement("input");
+  dateInput.setAttribute("type", "date");
+  dateInput.setAttribute("name", "date");
+  dateInput.setAttribute("class", "input");
+  dateInput.style.backgroundImage = "none";
+  inputDate.parentNode.insertBefore(dateInput, inputDate); // Вставить новое поле ввода перед оригинальным
+  dateInput.focus(); // Фокусировка на новом поле ввода даты
 });
 
-input.addEventListener("blur", () => {
-  input.style.backgroundImage = `url("../img/icons/icon-calendar.svg")`;
+// Зміна типу input type="text" на input type="time"
+
+const inputTime = document.querySelector("input[name='time']");
+
+inputTime.addEventListener("focus", () => {
+  // input.style.backgroundImage = "none";
+  inputTime.style.display = "none"; // Скрыть поле ввода текста
+  const dateInput = document.createElement("input");
+  dateInput.setAttribute("type", "time");
+  dateInput.setAttribute("name", "time");
+  dateInput.setAttribute("class", "input");
+  inputTime.parentNode.insertBefore(dateInput, inputTime); // Вставить новое поле ввода перед оригинальным
+  dateInput.focus(); // Фокусировка на новом поле ввода даты
 });
+
+// input.addEventListener("focus", () => {
+//   input.style.backgroundImage = "none";
+// });
+
+// input.addEventListener("blur", () => {
+//   input.style.backgroundImage = `url("../img/icons/icon-calendar.svg")`;
+// });

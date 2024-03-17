@@ -3233,6 +3233,8 @@ body {
   }
 }
 .form-book-now__box > * {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
   height: 4.0625rem;
   width: 100%;
   padding: 0 1.5rem 0 2.0625rem;
